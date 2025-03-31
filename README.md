@@ -48,7 +48,9 @@ terraform init
 
 # Preview the changes Terraform will make
 terraform plan
+```
 
+```bash
 # Apply the Terraform configuration to create resources
 terraform apply
 
