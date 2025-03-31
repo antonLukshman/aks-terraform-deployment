@@ -53,10 +53,11 @@ terraform plan
 ```bash
 # Apply the Terraform configuration to create resources
 terraform apply
+```
 
 ![Terraform Apply Success](screenshots/terraform-apply.png)
+
 <!-- Screenshot of terminal showing successful terraform apply completion -->
-```
 
 After confirming the plan, Terraform created:
 
@@ -78,13 +79,16 @@ terraform output -raw kube_config > kubeconfig
 $env:KUBECONFIG = "$(Get-Location)\kubeconfig"
 # This sets the KUBECONFIG environment variable to point to your newly created kubeconfig file.
 # This tells kubectl which cluster to connect to.
+```
 
+```bash
 # Verify connection to the cluster
 kubectl get nodes
+```
 
 ![AKS Cluster Nodes](screenshots/kubectl-get-nodes.png)
+
 <!-- Screenshot of terminal showing successful connection to cluster nodes -->
-```
 
 ### 3. Deploying the Application
 
@@ -102,16 +106,20 @@ kubectl apply -f service.yaml
 
 # Verify the pods are running
 kubectl get pods
+```
 
 ![Nginx Pods Running](screenshots/kubectl-get-pods.png)
+
 <!-- Screenshot of terminal showing 2 nginx pods running -->
 
+```bash
 # Verify the service has an external IP
 kubectl get services
+```
 
 ![Service with External IP](screenshots/kubectl-get-services.png)
+
 <!-- Screenshot of terminal showing the service with an assigned external IP -->
-```
 
 ### 4. Checking the Deployment
 
