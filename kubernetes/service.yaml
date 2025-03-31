@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: Service # Exposes the deployment to network traffic
+metadata:
+  name: nginx-service
+spec:
+  type: LoadBalancer # Creates a public IP address for external access
+  ports:
+    - port: 80 # Port the service listens on
+      targetPort: 80 # Port to forward to in the pods
+  selector:
+    app: nginx # Routes traffic to pods with this matching label

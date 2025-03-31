@@ -1,0 +1,21 @@
+# Local .terraform directories
+**/.terraform/*
+
+# .tfstate files
+*.tfstate
+*.tfstate.*
+
+# Crash log files
+crash.log
+crash.*.log
+
+# Kubeconfig files
+kubeconfig
+**/kubeconfig
+
+# Sensitive data
+*.tfvars
+.terraform.lock.hcl
+
+# Provider binaries
+*.exe
