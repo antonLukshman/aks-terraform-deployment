@@ -136,7 +136,7 @@ kubectl get service nginx-service
 
 The output shows the external IP address assigned to the service, which I used to access the application.
 
-I then accessed the application in a web browser by navigating to the EXTERNAL-IP address (http://20.121.235.12 in this example) and confirmed the nginx welcome page was displayed.
+I then accessed the application in a web browser by navigating to the EXTERNAL-IP address (http://40.90.245.205/ in this example) and confirmed the nginx welcome page was displayed.
 
 ![Nginx Welcome Page](screenshots/nginx-welcome-page.png)
 
@@ -145,7 +145,7 @@ I then accessed the application in a web browser by navigating to the EXTERNAL-I
 Alternatively, I tested it with curl:
 
 ```bash
-curl http://20.121.235.12
+curl http://40.90.245.205
 ```
 
 ![Curl Test](screenshots/curl-test.png)
